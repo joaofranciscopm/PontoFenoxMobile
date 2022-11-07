@@ -42,7 +42,7 @@ class SignupPage extends StatelessWidget {
                   ),
                 ),
                 child: SizedBox.expand(
-                  child: FlatButton(
+                  child: TextButton(
                     child: Icon(
                       Icons.add,
                       color: Colors.white,
@@ -123,7 +123,7 @@ class SignupPage extends StatelessWidget {
                 ),
               ),
               child: SizedBox.expand(
-                child: FlatButton(
+                child: TextButton(
                   child: Text(
                     "Cadastrar",
                     style: TextStyle(
@@ -143,7 +143,7 @@ class SignupPage extends StatelessWidget {
             Container(
               height: 40,
               alignment: Alignment.center,
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   "Cancelar",
                   textAlign: TextAlign.center,

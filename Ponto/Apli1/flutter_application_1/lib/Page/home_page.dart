@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:loginpage/Page/singuppage.dart';
 
 import 'ResetPasswordPage.dart';
-import 'reset-password.page.dart';
-import 'signup.page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -58,7 +57,7 @@ class LoginPage extends StatelessWidget {
             Container(
               height: 40,
               alignment: Alignment.centerRight,
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   "Recuperar Senha",
                 ),
@@ -92,7 +91,7 @@ class LoginPage extends StatelessWidget {
                     Radius.circular(5),
                   )),
               child: SizedBox.expand(
-                child: FlatButton(
+                child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -131,7 +130,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               child: SizedBox.expand(
-                child: FlatButton(
+                child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
@@ -162,7 +161,7 @@ class LoginPage extends StatelessWidget {
             ),
             Container(
                 height: 40,
-                child: FlatButton(
+                child: TextButton(
                   child: Text(
                     "Cadastre-se",
                     textAlign: TextAlign.center,
