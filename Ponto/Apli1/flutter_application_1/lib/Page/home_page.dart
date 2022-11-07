@@ -22,6 +22,9 @@ class LoginPage extends StatelessWidget {
               child: Image.asset("assets/fenoxlogo.png"),
             ),
             SizedBox(
+              height: 30,
+            ),
+            SizedBox(
               height: 20,
             ),
             TextFormField(
@@ -57,7 +60,7 @@ class LoginPage extends StatelessWidget {
             Container(
               height: 40,
               alignment: Alignment.centerRight,
-              child: TextButton(
+              child: ElevatedButton(
                 child: Text(
                   "Recuperar Senha",
                 ),
@@ -106,7 +109,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       Container(
                         child: SizedBox(
-                          child: Image.asset("assets/bone.png"),
+                          child: Image.asset("assets/fenoxlogo.png"),
                           height: 28,
                           width: 28,
                         ),
@@ -135,7 +138,7 @@ class LoginPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "Login com Facebook",
+                        "Login",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -145,7 +148,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       Container(
                         child: SizedBox(
-                          child: Image.asset("assets/fb-icon.png"),
+                          child: Image.asset("assets/fenoxlogo.png"),
                           height: 28,
                           width: 28,
                         ),
@@ -163,7 +166,7 @@ class LoginPage extends StatelessWidget {
                 height: 40,
                 child: TextButton(
                   child: Text(
-                    "Cadastre-se",
+                    "",
                     textAlign: TextAlign.center,
                   ),
                   onPressed: () {
