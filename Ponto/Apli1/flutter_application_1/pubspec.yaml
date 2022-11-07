@@ -77,7 +77,6 @@ flutter:
 
   assets:
   - assets/fenoxlogo.png
-  - assets/bone.png
   - assets/fb-icon.png
   - assets/reset-password-icon.png
   - assets/profile-picture.png

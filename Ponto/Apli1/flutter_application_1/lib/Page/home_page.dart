@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
           left: 40,
           right: 40,
         ),
-        color: Colors.white,
+        color: Color.fromARGB(255, 255, 255, 255),
         child: ListView(
           children: <Widget>[
             SizedBox(
@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget {
             Container(
               height: 40,
               alignment: Alignment.centerRight,
-              child: ElevatedButton(
+              child: TextButton(
                 child: Text(
                   "Recuperar Senha",
                 ),
@@ -86,8 +86,8 @@ class LoginPage extends StatelessWidget {
                     end: Alignment.bottomRight,
                     stops: [0.3, 1],
                     colors: [
-                      Color(0xFFF58524),
-                      Color(0xFFF92B7F),
+                      Color.fromARGB(255, 80, 7, 250),
+                      Color.fromARGB(255, 226, 226, 226),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -123,61 +123,9 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Container(
-              height: 60,
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                color: Color(0xFF3C5A99),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5),
-                ),
-              ),
-              child: SizedBox.expand(
-                child: TextButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        "Login",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                        textAlign: TextAlign.left,
-                      ),
-                      Container(
-                        child: SizedBox(
-                          child: Image.asset("assets/fenoxlogo.png"),
-                          height: 28,
-                          width: 28,
-                        ),
-                      ),
-                    ],
-                  ),
-                  onPressed: () {},
-                ),
-              ),
-            ),
             SizedBox(
               height: 10,
             ),
-            Container(
-                height: 40,
-                child: TextButton(
-                  child: Text(
-                    "",
-                    textAlign: TextAlign.center,
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SignupPage(),
-                      ),
-                    );
-                  },
-                )),
           ],
         ),
       ),
