@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:loginpage/Page/singuppage.dart';
-
-import 'ResetPasswordPage.dart';
 
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    void _backoffice() {
+      Navigator.pushReplacementNamed(context, '/backoffice');
+    }
+
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(
@@ -57,23 +58,6 @@ class LoginPage extends StatelessWidget {
               ),
               style: TextStyle(fontSize: 20),
             ),
-            Container(
-              height: 40,
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                child: Text(
-                  "Recuperar Senha",
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ResetPasswordPage(),
-                    ),
-                  );
-                },
-              ),
-            ),
             SizedBox(
               height: 40,
             ),
@@ -116,7 +100,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {_backoffice},
                 ),
               ),
             ),
